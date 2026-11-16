@@ -1,0 +1,19 @@
+{
+  "name": "beon-qa",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc",
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:ui": "playwright test --project=ui",
+    "test:ui:headed": "playwright test --project=ui --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^2.38.2",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
